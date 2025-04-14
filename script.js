@@ -57,7 +57,7 @@ function makeMap() {
                     });
 
                     var infowindow = new kakao.maps.InfoWindow({
-                        content: '<div style="width:150px;text-align:center;padding:6px 0;font-size: 18px;">ㅇㅇ♡ㅇㅇ<br/>ㅇㅇ컨벤션<br/>ㅇㅇㅇ홀</div>'
+                        content: '<div style="width:150px;text-align:center;padding:6px 0;font-size: 18px;">상균♡다미<br/>루클라비 수원</div>'
                     });
                     infowindow.open(map, marker);
 
@@ -106,8 +106,8 @@ function addPhotos() {
 // 카카오 페이
 function payLink(receiver) {
     let payLinkList = {
-        'kw': 'https://qr.kakaopay.com/FR2AwP2',
-        'hy': 'https://qr.kakaopay.com/FOLfEcc'
+        'kw': 'https://qr.kakaopay.com/FR2',
+        'hy': 'https://qr.kakaopay.com/FOL'
     };
 
     location.href = payLinkList[receiver];
@@ -115,10 +115,12 @@ function payLink(receiver) {
 
 function copyAccount(receiver) {
     let accountList = {
-        'kw': '3333105',
-        'hy': '1009016',
-        'hs': '9781002',
-        'hg': '137022'
+        'sg': '110424415060', //신랑
+        'dm': '70490200007572', // 신부
+        'sgf': '01044891533', // 신랑 부
+        'sgm': '01046771533', // 신랑 모
+        'dmf': '16702382795', // 신부 부
+        'dmm': '3020238359811' // 신부 모
     };
 
     var tempElem = document.createElement('textarea');
@@ -133,7 +135,7 @@ function copyAccount(receiver) {
 }
 
 function getDDay() {
-    const setDate = new Date("2025-09-23T00:00:00+0900");
+    const setDate = new Date("2025-07-05T00:00:00+0900");
     const setDateYear = setDate.getFullYear();
     const setDateMonth = setDate.getMonth() + 1;
     const setDateDay = setDate.getDate();
@@ -147,7 +149,7 @@ function getDDay() {
     const dDayElem = document.getElementById("dday");
 
     if (day === 0) {
-        dDayElem.parentElement.innerHTML = ' ㅇㅇ<span class="highlight">♥</span> ㅇㅇ의 결혼식이 <span class="highlight fw-bold">오늘</span> 입니다.';
+        dDayElem.parentElement.innerHTML = ' 상균<span class="highlight">♥</span> 다미의 결혼식이 <span class="highlight fw-bold">오늘</span> 입니다.';
     } else if (day <= -1) {
         dDayElem.innerHTML = 0 + '일';
     } else {

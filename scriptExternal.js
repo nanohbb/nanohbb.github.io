@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 가져온 이름을 사용하여 텍스트를 변경합니다.
     var coupleTitle = document.querySelector("#couple");
     if (to === null) {
-        coupleTitle.innerText = "ㅇㅇ 그리고 ㅇㅇ\n 저희 결혼합니다.";
+        coupleTitle.innerText = "상균 그리고 다미\n 저희 결혼합니다.";
     } else {
         switch (to) {
             case "qyely":
