@@ -80,7 +80,7 @@ function addPhotos() {
     const photoSuffix = '.jpeg';
     let photoName = '';
 
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= 6; i++) {
         const baseDiv = document.createElement("div");
         baseDiv.className = i == 1 ? "carousel-item active" : "carousel-item";
 
