@@ -159,7 +159,7 @@ td {
     border-radius: 20px;
     display: inline-block;
     position: relative;
-    background: radial-gradient(#ed94957a, #ed949540, #ed949500, #9198e500);
+    /*background: radial-gradient(#ed94957a, #ed949540, #ed949500, #9198e500);*/
 }
 
 .bgGradient.blue {
@@ -169,7 +169,7 @@ td {
     border-radius: 20px;
     display: inline-block;
     position: relative;
-    background: radial-gradient(#94e0ed7a, #94e0ed40, #ed949500, #9198e500);
+    /*background: radial-gradient(#94e0ed7a, #94e0ed40, #ed949500, #9198e500);*/
 }
 
 .bgGradient.gray {
