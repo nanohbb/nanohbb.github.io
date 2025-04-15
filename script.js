@@ -77,10 +77,10 @@ function addPhotos() {
     thumbnailContainer.innerHTML = '';
 
     const photoPrefix = 'img/photos/';
-    const photoSuffix = '.jpeg';
+    const photoSuffix = '.jpg';
     let photoName = '';
 
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 53; i++) {
         const baseDiv = document.createElement("div");
         baseDiv.className = i == 1 ? "carousel-item active" : "carousel-item";
 
